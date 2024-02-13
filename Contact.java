@@ -2,21 +2,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Contact {
-    String name;
-    List<String> phoneNumbers;
+    private String name;
+    private List<String> phoneNumbers;
 
-    Contact(String user_name, String phoneNomber){
-    this.name = name;
-    this.phoneNumbers = new ArrayList<>();
-    this.phoneNumbers.add(phoneNomber);
+    public Contact(String user_name, String phoneNomber){
+        this.name = name;
+        this.phoneNumbers = new ArrayList<>();
+        this.phoneNumbers.add(phoneNomber);
 }
-    String getUser_name(){
-    return name;
+    public String getName(){
+        return name;
 }
-    List<String> getPhoneNumbers(){
-    return phoneNumbers;
+    public List<String> getPhoneNumbers(){
+        return phoneNumbers;
 }
-    void removePhoneNumbers(String phoneNomber){
+    public void removePhoneNumbers(String phoneNomber){
         phoneNombers.remove(phoneNomber);
     }
 }
