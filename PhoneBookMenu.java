@@ -59,7 +59,7 @@ public class PhoneBookMenu {
         String phoneNumber = scanner.nextLine();
         phoneBook.addContact(name, phoneNumber);
     }
-    private void removePhoneNumber(){
+    private void removePhoneNumber() {
         System.out.print("Введите имя контакта: ");
         String name = scanner.nextLine();
         System.out.print("Введите номер телефона: ");

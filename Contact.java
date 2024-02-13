@@ -5,10 +5,10 @@ public class Contact {
     private String name;
     private List<String> phoneNumbers;
 
-    public Contact(String user_name, String phoneNomber){
+    public Contact(String user_name, String phoneNumber){
         this.name = name;
         this.phoneNumbers = new ArrayList<>();
-        this.phoneNumbers.add(phoneNomber);
+        this.phoneNumbers.add(phoneNumber);
 }
     public String getName(){
         return name;
@@ -16,7 +16,11 @@ public class Contact {
     public List<String> getPhoneNumbers(){
         return phoneNumbers;
 }
-    public void removePhoneNumbers(String phoneNomber){
-        phoneNombers.remove(phoneNomber);
+    public void removePhoneNumber(String phoneNumber){
+        phoneNumbers.remove(phoneNumber);
+    }
+
+    public void addPhoneNumber(String phoneNumber) {
+        phoneNumbers.add(phoneNumber);
     }
 }
