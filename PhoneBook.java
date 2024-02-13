@@ -30,7 +30,7 @@ public class PhoneBook {
         List<Contact> sortedContacts = new ArrayList<>(contacts.values());
         sortedContacts.sort(Comparator.comparingInt(contact -> -contact.getPhoneNumbers().size()));
         for (Contact contact : sortedContacts) {
-            System.out.println(contact.getName() + ":" + contact.getPhoneNumbers());
+            System.out.println(contact.getName() + ": " + contact.getPhoneNumbers());
         }
     }
 }
