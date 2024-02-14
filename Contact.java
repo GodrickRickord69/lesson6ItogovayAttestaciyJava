@@ -5,7 +5,7 @@ public class Contact {
     private String name;
     private List<String> phoneNumbers;
 
-    public Contact(String user_name, String phoneNumber){
+    public Contact(String name, String phoneNumber){
         this.name = name;
         this.phoneNumbers = new ArrayList<>();
         this.phoneNumbers.add(phoneNumber);
